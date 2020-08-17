@@ -25,7 +25,7 @@ class PlayerEnchantOptionsPacket extends PEPacket {
 
         foreach ($this->items as $item) {
             $this->putVarInt(0); // cost
-            $this->putSlot($item);;
+            $this->putSlot($item);
             $this->putString("name"); // enchant name
             $this->putVarInt(0);  // SimpleServerNetId<struct RecipeNetIdTag, unsinged int, 0>
         }
